@@ -189,7 +189,6 @@ class IrcBot extends Adapter
     # Override the response to provide a sendPrivate method
     @robot.Response = IrcResponse
 
-    @robot.name = options.nick
     bot = new Irc.Client options.server, options.nick, client_options
 
     next_id = 1
